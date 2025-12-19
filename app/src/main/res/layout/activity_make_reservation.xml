@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_light">
+
+    <ImageView
+        android:id="@+id/btnBackRes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make a Reservation"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etResDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="DD/MM/YYYY"
+        android:focusable="false"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etResTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="HH:MM (e.g. 19:00)"
+        android:focusable="false"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Party Size:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etPartySize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Number of people (e.g. 2)"
+        android:inputType="number"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitRes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Confirm Reservation"
+        android:backgroundTint="@color/blue_primary"
+        android:textSize="18sp"/>
+
+</LinearLayout>

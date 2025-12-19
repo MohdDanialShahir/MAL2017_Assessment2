@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/background_light">
+
+    <!-- Header with Notification Icon -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgNotificationBell"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="Notifications"
+            android:focusable="true"
+            android:src="@android:drawable/ic_popup_reminder"
+            app:tint="#555555" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guest Dashboard"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"
+        android:paddingBottom="120dp"
+        android:paddingTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnGuestMenu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Browse Menu"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue_primary"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Merged Button: Reservations -->
+    <Button
+        android:id="@+id/btnReservations"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Reservations"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue_primary"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnGuestSettings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Settings"
+        android:backgroundTint="#757575"/>
+
+</LinearLayout>
